@@ -1,0 +1,106 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L usb_c_6pin:usb_c_6pin U1
+U 1 1 5D77F596
+P 5150 2600
+F 0 "U1" V 4675 2481 50  0000 C CNN
+F 1 "usb_c_6pin" V 4766 2481 50  0000 C CNN
+F 2 "usb_custom:USB_C_6PIN_custom" H 5100 2700 50  0001 C CNN
+F 3 "" H 5100 2700 50  0001 C CNN
+	1    5150 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:USB_A J1
+U 1 1 5D77F8E6
+P 6300 2600
+F 0 "J1" H 6070 2498 50  0000 R CNN
+F 1 "USB_A" H 6070 2589 50  0000 R CNN
+F 2 "usb_custom:female_usb_custom_smd" H 6450 2550 50  0001 C CNN
+F 3 " ~" H 6450 2550 50  0001 C CNN
+	1    6300 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D77F945
+P 5500 2550
+F 0 "R1" V 5293 2550 50  0000 C CNN
+F 1 "R" V 5384 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5430 2550 50  0001 C CNN
+F 3 "~" H 5500 2550 50  0001 C CNN
+	1    5500 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D77F99D
+P 5500 2650
+F 0 "R2" V 5293 2650 50  0000 C CNN
+F 1 "R" V 5384 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5430 2650 50  0001 C CNN
+F 3 "~" H 5500 2650 50  0001 C CNN
+	1    5500 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 2650 5350 2650
+Wire Wire Line
+	5250 2550 5350 2550
+Wire Wire Line
+	5250 2850 5700 2850
+Wire Wire Line
+	5700 2850 5700 2650
+Wire Wire Line
+	5650 2650 5700 2650
+Connection ~ 5700 2650
+Wire Wire Line
+	5700 2650 5700 2550
+Wire Wire Line
+	5250 2450 5950 2450
+Wire Wire Line
+	5950 2800 6000 2800
+Wire Wire Line
+	5250 2750 5950 2750
+Wire Wire Line
+	5950 2450 5950 2750
+Connection ~ 5950 2750
+Wire Wire Line
+	5950 2750 5950 2800
+Wire Wire Line
+	6400 2200 6300 2200
+Wire Wire Line
+	4850 3000 5700 3000
+Wire Wire Line
+	5700 3000 5700 2850
+Connection ~ 5700 2850
+Wire Wire Line
+	6300 2200 6300 2150
+Wire Wire Line
+	6300 2150 5700 2150
+Connection ~ 6300 2200
+Wire Wire Line
+	5650 2550 5700 2550
+Connection ~ 5700 2550
+Wire Wire Line
+	5700 2550 5700 2350
+Wire Wire Line
+	5250 2350 5700 2350
+Connection ~ 5700 2350
+Wire Wire Line
+	5700 2150 5700 2350
+$EndSCHEMATC
